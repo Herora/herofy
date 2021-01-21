@@ -1,0 +1,129 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: rgb(252, 227, 227);
+    background-color: white;
+}
+
+hr {
+    border-color: gray;
+}
+
+.img-circle {
+    border-radius: 100%;
+    width: 150px;
+}
+
+.card-title,
+.card-text {
+    color: black;
+}
+
+.btnnav{ 
+    margin-right:1rem;
+}
+.img-thumb {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.table{
+    display: flexbox;
+}
+
+th,td{
+    color:#ffff;
+}
+
+.texttable{
+    background-color: rgba(239, 235, 233, 0.13);
+    border: 1px solid rgba(189,189,189, 1);
+    border-radius: 10px;
+    color: black;
+    align-items: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.margtable{ background-color: rgba(239, 235, 233, 0.13);
+    border: 1px solid rgba(189,189,189, 1);
+    border-radius: 10px;
+    color: black;
+    align-items: center;
+    padding-top:25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+iframe{
+    width: 100%;
+}
+.tit{
+    display:flexbox;
+    margin: 0;
+}
+
+nav font{
+    color: white;
+}
+audio{
+    width: 100%;
+}
+
+.navbar{
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+h1,h2,h3,p{
+    color: black;
+}
+
+.btn-outline-success{
+    color:black;
+}
+
+footer{
+    margin-top:50px;
+    width:100%;
+    height:max-content;
+    background-color:rgb(4, 194, 77);
+    text-align: -webkit-left;
+    padding: 2.5em;
+}
+.textfooter{
+    color: white;
+}
+.caja1{
+    border-right: 1px solid white;
+}

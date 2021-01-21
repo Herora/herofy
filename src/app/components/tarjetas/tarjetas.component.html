@@ -1,0 +1,53 @@
+  
+  <div [ngSwitch]="i">
+    <div *ngSwitchCase="'artista'">
+      
+  <div class="card-columns  animated fadeIn row ">
+    <div class="card col-sm-3" *ngFor="let item of items" >
+      <!--las llaves [] significa que eso es una propiedad-->
+      <div class="picture-container">
+        <img class="card-img-top  imgcard" [src]="item.images | noimage" alt="Card image cap" title="ver artista"
+        (click)="verArtista(item)">
+        <div class="overlay"  (click)="verArtista(item)"><h2 class="texthover">Ver Artista</h2></div>
+      </div>
+      
+      <div class="card-body cardbody">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p class="card-text">
+          <span *ngFor="let artista of item.artists" class="badge badge-success">{{artista.name}}</span>
+        </p>
+        <button class="btn btn-transparent btn--narrow " 
+          (click)="agregarAlbum(item.id)"><span onClick="alert('¡Album agregado a favoritos!')" title="Guardar en Tu biblioteca" class="fa fa-heartbeat" style="font-size:24px;color:red;"></span></button>
+      </div>
+   
+
+  </div>
+  </div>
+
+    </div>
+
+
+    <div *ngSwitchCase="'albums'">
+      
+      <div class="card-columns  animated fadeIn row">
+        <div class="card col-sm-3" *ngFor="let item of items card">
+          <!--las llaves [] significa que eso es una propiedad-->
+          <div class="picture-container">
+          <img class="card-img-top card puntero" [src]="item.album.images | noimage" alt="Card image cap" title="ver artista">
+            
+      </div>
+          <div class="card-body">
+            <h5 class="card-title">{{item.album.name}}</h5>
+            <p class="card-text">
+              <span *ngFor="let artista of item.album.artists" class="badge badge-success">{{artista.name}}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+  
+  
+  

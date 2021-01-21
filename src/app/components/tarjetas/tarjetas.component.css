@@ -1,0 +1,56 @@
+
+
+.spoticon-heart-24:before {
+    content: "\f3DB";
+    font-size: 24px;
+    color: red;
+}
+
+.cardartis{
+    display: block;
+}
+
+.icon{
+    color: red,
+}
+
+.imgcard {
+    cursor: pointer;
+}
+.picture-container{
+  
+    width: 100% ;
+    position: relative;
+}
+
+.picture-container:hover .overlay{
+    opacity: 1;
+}
+/*.picture-container:active .overlay{
+    opacity: 1;
+}*/
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(82, 82, 82);
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   color: rgb(255, 255, 255);
+  }
+
+  .texthover{
+      color:white;
+  }
+
+  .cardbody{
+    display: inline-block;
+  }
